@@ -12,6 +12,9 @@
 		3B72F14922423E6F00EE48FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B72F14722423E6F00EE48FA /* Main.storyboard */; };
 		3B72F14B22423E6F00EE48FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B72F14A22423E6F00EE48FA /* Assets.xcassets */; };
 		3B72F14E22423E6F00EE48FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B72F14C22423E6F00EE48FA /* LaunchScreen.storyboard */; };
+		3B72F156224242C600EE48FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72F155224242C600EE48FA /* LoginViewController.swift */; };
+		3B72F158224255DA00EE48FA /* mozahar_ios_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B72F157224255DA00EE48FA /* mozahar_ios_logo.png */; };
+		5A943D7F5E93DBBB9A7EAB43 /* Pods_FB_AccountKit_Integration_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493EBB91303E90FBEED114D1 /* Pods_FB_AccountKit_Integration_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		3B72F14A22423E6F00EE48FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B72F14D22423E6F00EE48FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B72F14F22423E6F00EE48FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B72F155224242C600EE48FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B72F157224255DA00EE48FA /* mozahar_ios_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mozahar_ios_logo.png; sourceTree = "<group>"; };
+		493EBB91303E90FBEED114D1 /* Pods_FB_AccountKit_Integration_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FB_AccountKit_Integration_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DED9FD2BCEE4B673BF7D52 /* Pods-FB AccountKit Integration-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FB AccountKit Integration-Swift.debug.xcconfig"; path = "Target Support Files/Pods-FB AccountKit Integration-Swift/Pods-FB AccountKit Integration-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		99B886D72895A7F1990DB215 /* Pods-FB AccountKit Integration-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FB AccountKit Integration-Swift.release.xcconfig"; path = "Target Support Files/Pods-FB AccountKit Integration-Swift/Pods-FB AccountKit Integration-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A943D7F5E93DBBB9A7EAB43 /* Pods_FB_AccountKit_Integration_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				3B72F14222423E6F00EE48FA /* FB AccountKit Integration-Swift */,
 				3B72F14122423E6F00EE48FA /* Products */,
+				F0DFC088D0F85165C74E074B /* Pods */,
+				714A078E0F391444B1187FBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,31 @@
 			children = (
 				3B72F14322423E6F00EE48FA /* AppDelegate.swift */,
 				3B72F14522423E6F00EE48FA /* ViewController.swift */,
+				3B72F155224242C600EE48FA /* LoginViewController.swift */,
 				3B72F14722423E6F00EE48FA /* Main.storyboard */,
 				3B72F14A22423E6F00EE48FA /* Assets.xcassets */,
+				3B72F157224255DA00EE48FA /* mozahar_ios_logo.png */,
 				3B72F14C22423E6F00EE48FA /* LaunchScreen.storyboard */,
 				3B72F14F22423E6F00EE48FA /* Info.plist */,
 			);
 			path = "FB AccountKit Integration-Swift";
+			sourceTree = "<group>";
+		};
+		714A078E0F391444B1187FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493EBB91303E90FBEED114D1 /* Pods_FB_AccountKit_Integration_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0DFC088D0F85165C74E074B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50DED9FD2BCEE4B673BF7D52 /* Pods-FB AccountKit Integration-Swift.debug.xcconfig */,
+				99B886D72895A7F1990DB215 /* Pods-FB AccountKit Integration-Swift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B72F15222423E7000EE48FA /* Build configuration list for PBXNativeTarget "FB AccountKit Integration-Swift" */;
 			buildPhases = (
+				2E6D062F58E6D2B5D202B608 /* [CP] Check Pods Manifest.lock */,
 				3B72F13C22423E6F00EE48FA /* Sources */,
 				3B72F13D22423E6F00EE48FA /* Frameworks */,
 				3B72F13E22423E6F00EE48FA /* Resources */,
+				CC888E95492338E6BA7C9B1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,16 +157,65 @@
 				3B72F14E22423E6F00EE48FA /* LaunchScreen.storyboard in Resources */,
 				3B72F14B22423E6F00EE48FA /* Assets.xcassets in Resources */,
 				3B72F14922423E6F00EE48FA /* Main.storyboard in Resources */,
+				3B72F158224255DA00EE48FA /* mozahar_ios_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E6D062F58E6D2B5D202B608 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FB AccountKit Integration-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC888E95492338E6BA7C9B1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FB AccountKit Integration-Swift/Pods-FB AccountKit Integration-Swift-resources.sh",
+				"${PODS_ROOT}/AccountKit/AccountKitStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccountKitStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FB AccountKit Integration-Swift/Pods-FB AccountKit Integration-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B72F13C22423E6F00EE48FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B72F156224242C600EE48FA /* LoginViewController.swift in Sources */,
 				3B72F14622423E6F00EE48FA /* ViewController.swift in Sources */,
 				3B72F14422423E6F00EE48FA /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +361,7 @@
 		};
 		3B72F15322423E7000EE48FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DED9FD2BCEE4B673BF7D52 /* Pods-FB AccountKit Integration-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +379,7 @@
 		};
 		3B72F15422423E7000EE48FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99B886D72895A7F1990DB215 /* Pods-FB AccountKit Integration-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
